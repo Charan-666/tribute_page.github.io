@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+body {
+  background: url(image.jpg);
+}
+h1 {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+}
+h2 {
+  color: white;
+  text-align: center;
+  padding-bottom: 20px;
+}
+img {
+  border-radius: 130px;
+}
+img:hover {
+  box-shadow: 5px 15px 25px rgba(253, 219, 1, 0.949);
+  transition: 0.2s;
+}
+p {
+  color: white;
+  padding: 15px;
+  line-height: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 10px;
+  font-size: 20px;
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+}
+#para p{
+  margin-top: -70px;
+}
+
+.imagebox {
+  width: 60%;
+  height: 450px;
+  background-image: url(FC2vEFRUUAMJhr9_1200x768.jpeg);
+  position: absolute;
+  left: 40%;
+  top: 110%;
+  transform: translate(-35%, 10%);
+  background-size: 100% 100%;
+  box-shadow: 3px 5px 25px rgba(253, 219, 1, 0.949);
+  animation: slider 12s infinite linear;
+}
+
+@keyframes slider {
+  0% {
+    background-image: url(FC2vEFRUUAMJhr9_1200x768.jpeg);
+  }
+  25% {
+    background-image: url(43fe876ac73350e8094680fcdc69c3fa.jpg);
+  }
+  50% {
+    background-image: url(1635509491_puneet-rajkumar.jpg);
+  }
+  75% {
+    background-image: url(HD-wallpaper-smiling-puneeth-rajkumar-is-showing-thumbsup-wearing-white-blue-coat-suit-puneeth-rajkumar.jpg);
+  }
+
+}
+
+@media (max-width: 600px){
+  .imagebox {
+    width: 80%;
+    height: 400px;
+    padding-left: -5px;
+    top: 275%;
+    margin-top: 30px;
+  
+}
+
+}
